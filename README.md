@@ -71,6 +71,44 @@ To improve accuracy, I created a neural network with one hidden linear layer usi
 
 *Decision boundaries on spiral dataset using a neural network model with one hidden layer.*
 
+## Section 03: PyTorch Computer Vision
+
+### Lecture Notebook:
+
+Made classification predictions on the [FashionMNIST](https://github.com/zalandoresearch/fashion-mnist) dataset. I was introduced to PyTorch [DataLoaders](https://pytorch.org/tutorials/beginner/basics/data_tutorial.html) and timing the training of my model's.
+
+| Model               | Decription                                                                                                                                           |
+| ---                 | ---                                                                                                                                                  |
+| FashionMNISTModelV0 | Neural Network with 2 linear layers and trained on the CPU                                                                                           |
+| FashionMNISTModelV1 | Similar to V0 but trained on the GPU and uses ReLU activation functions in between linear layers to lear non linearity                               |
+| FashionMNISTModelV2 | CNN model architecture that replicates TinyVGG used on the [CNN Explainer](https://poloclub.github.io/cnn-explainer/) website and trained on the GPU |
+
+Below is a comparison of model results. All models trained for 3 epochs.
+
+| Model               | loss     | accuracy   | training time  |
+| ---                 | ---      | ---        |  ---           |
+| FashionMNISTModelV0 | 0.476639 | 83.426518  | 35.320797	   |
+| FashionMNISTModelV1 | 0.685001 | 75.019968  | 32.601134      |
+| FashionMNISTModelV2 | 0.321644 | 88.448482  | 36.510819      |
+
+We then used matplotlib to print out images of random predictions and we were introduced to confusion matrices and saving and loading the best performing model.
+
+### Exercise Notebook:
+
+I worked with the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset. I used a CNN with the Tiny VGG architecture. Before training I visualized the data. On the test data this model had a test accuracy of 87.39% with a train time 73.076 seconds. I then plotted a confusion matrix to compare the model's predictions to the truth labels. I then visualized wrong predictions and inferred why they may have been classified wrong, which I think this is due to error in data where some images in certain classes look too similar to images in other classes. For example, it is hard to distinguish between images of sneakers and images of ankle boots or images of shirts and images of coats, etc.
+
+![Visual of correct MNIST classifications][exercise_03_00]
+
+*Visual of Tiny VGG predictions on MNIST*
+
+![Confustion matrix for MNIST classifications][exercise_03_01]
+
+*Confustion matrix for MNIST classifications*
+
+![Visual of incorrect MNIST classifications][exercise_03_02]
+
+*Visual of incorrect Tiny VGG predictions on MNIST*
+
 [exercise_01]: /images/Exercise_01.jpg
 [lecture_02_00]: /images/Lecture_02_00.jpg
 [lecture_02_01]: /images/Lecture_02_01.jpg
@@ -78,3 +116,6 @@ To improve accuracy, I created a neural network with one hidden linear layer usi
 [exercise_02_00]: /images/Exercise_02_00.jpg
 [exercise_02_01]: /images/Exercise_02_01.jpg
 [exercise_02_02]: /images/Exercise_02_02.jpg
+[exercise_03_00]: /images/Exercise_03_00.jpg
+[exercise_03_01]: /images/Exercise_03_01.jpg
+[exercise_03_02]: /images/Exercise_03_02.jpg
