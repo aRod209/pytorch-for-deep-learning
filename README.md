@@ -1,7 +1,12 @@
 # pytorch-for-deep-learning
 Notebooks of lessons and exercises for the course "Learn PyTorch for Deep Learning: Zero to Mastery"
 
+<details>
+
+<summary><b>Section 00: PyTorch Fundamentals</b></summary>
+
 ## Section 00: PyTorch Fundamentals
+
 ### Lecture Notebook:
 
  Going over PyTorch fundamentals such as creating tensors in different ways, finding information about tensors, tensor operations for tensor manipulation, matrix operations, and comparaing PyTorch tensors and NumPy arrays.
@@ -9,6 +14,12 @@ Notebooks of lessons and exercises for the course "Learn PyTorch for Deep Learni
 ### Exercise Notebook:
 
 Simple exercises of creating PyTorch tensors and manipulating them.
+
+</details>
+
+<details>
+
+<summary><b>Section 01: PyTorch Workflow</b></summary>
 
 ## Section 01: PyTorch Workflow
 
@@ -23,6 +34,12 @@ Replicate the PyTorch workflow using a straight-line dataset. A linear model is 
 ![Making predictions with the training data and testing data of a linear dataset with a linear model.][exercise_01]
 
 *Making predictions with the training data and testing data of a linear dataset with a linear model.*
+
+</details>
+
+<details>
+
+<summary><b>Section 02: Neural Network classification with PyTorch</b></summary>
 
 ## Section 02: Neural Network classification with PyTorch
 
@@ -71,6 +88,12 @@ To improve accuracy, I created a neural network with one hidden linear layer usi
 
 *Decision boundaries on spiral dataset using a neural network model with one hidden layer.*
 
+</details>
+
+<details>
+
+<summary><b>Section 03: PyTorch Computer Vision</b></summary>
+
 ## Section 03: PyTorch Computer Vision
 
 ### Lecture Notebook:
@@ -108,6 +131,8 @@ I worked with the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset. I used a C
 ![Visual of incorrect MNIST classifications][exercise_03_02]
 
 *Visual of incorrect Tiny VGG predictions on MNIST*
+
+</details>
 
 [exercise_01]: /images/Exercise_01.jpg
 [lecture_02_00]: /images/Lecture_02_00.jpg
