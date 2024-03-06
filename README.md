@@ -1,6 +1,8 @@
 # pytorch-for-deep-learning
 Notebooks of lessons and exercises for the course "Learn PyTorch for Deep Learning: Zero to Mastery"
 
+*Click the different sections below to read about details of what I learned in the section lecture and what I did in the section exercises.*
+
 <details>
 
 <summary><b>Section 00: PyTorch Fundamentals</b></summary>
