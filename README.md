@@ -136,6 +136,22 @@ I worked with the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset. I used a C
 
 </details>
 
+<details>
+
+<summary><b>Section 04: PyTorch Custom Datasets</b></summary>
+
+## Section 04: PyTorch Custom Datasets
+
+### Lecture Notebook:
+
+Used a custom dataset with a subset of the [Food101](https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fdata.vision.ee.ethz.ch%2Fcvl%2Fdatasets_extra%2Ffood-101%2F) dataset. This is a datset with pizza, setak, and sushi images. I learned how to create custom datasets, utilize `torchvision.transforms` for data transformation, employ `ImageFolder` and a custom `Dataset` class for loading image data, and apply data augmentation. Additionally we built two models, neither particularly great. One model used the [TinyVGG](https://poloclub.github.io/cnn-explainer/) architecture, and the other also used TinyVGG architecture but augmented the data. I then explored loss curves, compared model results, and made a prediction on a custom image.
+
+![Comparing model results][lecture_04_00]
+
+*A comparison of the results of two different models.*
+
+</details>
+
 [exercise_01]: /images/Exercise_01.jpg
 [lecture_02_00]: /images/Lecture_02_00.jpg
 [lecture_02_01]: /images/Lecture_02_01.jpg
@@ -146,3 +162,4 @@ I worked with the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset. I used a C
 [exercise_03_00]: /images/Exercise_03_00.jpg
 [exercise_03_01]: /images/Exercise_03_01.jpg
 [exercise_03_02]: /images/Exercise_03_02.jpg
+[lecture_04_00]: /images/Lecture_04_00.jpg
