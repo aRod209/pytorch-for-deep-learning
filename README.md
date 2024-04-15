@@ -150,6 +150,38 @@ Used a custom dataset with a subset of the [Food101](https://colab.research.goog
 
 *A comparison of the results of two different models.*
 
+### Exercise Notebook:
+
+This exercise basically rehashed most of what was done in lecure. I downloaded the same dataset from lecture, created a transform that reshaped the images to 64x64, loaded the image data using `ImageFolder`, and created `DataLoader`s. I then recreated the TinyVGG model for the [CNN Explainer](https://poloclub.github.io/cnn-explainer/) website. Training and testing functions were created as in lecture. I then trained the model for 5, then 20, and then 50 epochs.
+
+![Five epochs results][exercise_04_00]
+
+*Loss and Accuracy after training TinyVGG model for 5 epochs.*
+
+![Twenty epochs results][exercise_04_01]
+
+*Loss and Accuracy after training TinyVGG model for 20 epochs.*
+
+![Fifty epochs results][exercise_04_02]
+
+*Loss and Accuracy after training TinyVGG model for 50 epochs.*
+
+As you can see, our model was over-fitting with the increase of epochs. I then doubled the hidden units from 10 to 20 and then trained a model for 20 epochs.
+
+![20 hidden units results][exercise_04_03]
+
+*Loss and Accuracy after training TinyVGG model with 20 hidden units.*
+
+The results actually looks like it got worse. And, it looks like it's on it's way to overfit if epochs increase.
+
+I then doubled the training data to be used and trained a TinyVGG architecture model for 20 epochs.
+
+![Doubled training data results][exercise_04_04]
+
+*Loss and Accuracy after training TinyVGG model with 20 hidden units and double the training data.*
+
+This is probably our best model yet (75% train accuracy and 66% test accuracy). However, the overall results are not that great.
+
 </details>
 
 [exercise_01]: /images/Exercise_01.jpg
@@ -163,3 +195,8 @@ Used a custom dataset with a subset of the [Food101](https://colab.research.goog
 [exercise_03_01]: /images/Exercise_03_01.jpg
 [exercise_03_02]: /images/Exercise_03_02.jpg
 [lecture_04_00]: /images/Lecture_04_00.jpg
+[exercise_04_00]: /images/Excercise_04_00.jpg
+[exercise_04_01]: /images/Excercise_04_01.jpg
+[exercise_04_02]: /images/Excercise_04_02.jpg
+[exercise_04_03]: /images/Excercise_04_03.jpg
+[exercise_04_04]: /images/Excercise_04_04.jpg
