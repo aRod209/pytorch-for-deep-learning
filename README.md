@@ -184,6 +184,16 @@ This is probably our best model yet (75% train accuracy and 66% test accuracy). 
 
 </details>
 
+<details>
+
+<summary><b>Section 05: PyTorch Going Modular</b></summary>
+
+### Lecture Notebook:
+
+We turned useful notebook code cells into reusable Python files. We used the same code that was used for Section 04. The goal was to train the model we built in the previous section with one line of code on the command line: `python train.py`. Before doing this we created a directory structure of reusable Python scripts. The methods in these scripts contain Docstrings based on [Google's Python Style Guide](https://google.github.io/styleguide/pyguide.html#383-functions-and-methods).
+
+</details>
+
 [exercise_01]: /images/Exercise_01.jpg
 [lecture_02_00]: /images/Lecture_02_00.jpg
 [lecture_02_01]: /images/Lecture_02_01.jpg
