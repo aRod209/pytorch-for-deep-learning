@@ -192,6 +192,14 @@ This is probably our best model yet (75% train accuracy and 66% test accuracy). 
 
 We turned useful notebook code cells into reusable Python files. We used the same code that was used for Section 04. The goal was to train the model we built in the previous section with one line of code on the command line: `python train.py`. Before doing this we created a directory structure of reusable Python scripts. The methods in these scripts contain Docstrings based on [Google's Python Style Guide](https://google.github.io/styleguide/pyguide.html#383-functions-and-methods).
 
+### Exercise Notebook:
+
+The Exercise was very similar to what was done for the section lecture. Something I did in this exercise that was not done in lecuture was use Python's [argparse](https://docs.python.org/3/library/argparse.html) module to add arguments when using a script.
+
+The goal was to create a script to accept an image path (and optinally a model, input shape, etc.) and make a prediction on the image whether it is pizza, steak, or sushi.
+
+Example: `python predict.py --image_path data/pizza_steak_sushi/test/sushi/175783.jpg --saved_model 'tinyvgg_model.pt' --input_shape 3 --output_shape 3 --hidden_units 128`
+
 </details>
 
 [exercise_01]: /images/Exercise_01.jpg
