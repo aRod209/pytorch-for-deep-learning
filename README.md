@@ -27,7 +27,7 @@ Simple exercises of creating PyTorch tensors and manipulating them.
 
 ### Lecture Notebook:
 
-Going over a PyTorch end-to-end workflow. We start by preparing and loading data, then we build a linear model and we train the data on theh linear model. While training thhe data we plot the curves of the training loss and testing loss. We then go over saving and loading the training model.
+Going over a PyTorch end-to-end workflow. We start by preparing and loading data, then we build a linear model and we train the data on the linear model. While training the data we plot the curves of the training loss and testing loss. We then go over saving and loading the training model.
 
 ### Exercise Notebook:
 
