@@ -152,7 +152,7 @@ Used a custom dataset with a subset of the [Food101](https://colab.research.goog
 
 ### Exercise Notebook:
 
-This exercise basically rehashed most of what was done in lecure. I downloaded the same dataset from lecture, created a transform that reshaped the images to 64x64, loaded the image data using `ImageFolder`, and created `DataLoader`s. I then recreated the TinyVGG model for the [CNN Explainer](https://poloclub.github.io/cnn-explainer/) website. Training and testing functions were created as in lecture. I then trained the model for 5, then 20, and then 50 epochs.
+This exercise basically rehashed most of what was done in lecture. I downloaded the same dataset from lecture, created a transform that reshaped the images to 64x64, loaded the image data using `ImageFolder`, and created `DataLoader`s. I then recreated the TinyVGG model for the [CNN Explainer](https://poloclub.github.io/cnn-explainer/) website. Training and testing functions were created as in lecture. I then trained the model for 5, then 20, and then 50 epochs.
 
 ![Five epochs results][exercise_04_00]
 
