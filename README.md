@@ -202,6 +202,26 @@ Example: `python predict.py --image_path data/pizza_steak_sushi/test/sushi/17578
 
 </details>
 
+<details>
+
+<summary><b>Section 06: PyTorch Transfer Learning</b></summary>
+
+### Lecture Notebook
+
+This notebook is all about transfer learning using [EfficientNet_B0](https://pytorch.org/vision/main/models/generated/torchvision.models.efficientnet_b0.html#torchvision.models.EfficientNet_B0_Weights). We first created transforms manually and then automatically with EfficientNet's pre-trained weights. We then froze the base layers and updated the classification layer to suit our problem (Pizza, Steak, and Sushi classification). After training and evaluating the model, we see our best loss and accuracy curves yet.
+
+![EfficientNet B0 Loss Curves][lecture_06_00]
+
+*Efficient Net B0 Loss Curves and Accuracy Curves*
+
+We then make predictions on 3 test images, which at the time of this writing happen to be all correct. Lastly, a correct prediction was made on a custom image which I downloaded from the [Pytorch for Deep Learning GitHub repo](https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/04-pizza-dad.jpeg).
+
+We can see that, by far, transfer learning has been the most accurate and efficient method we have used so far.
+
+### Exercise Notebook
+
+</details>
+
 [exercise_01]: /images/Exercise_01.jpg
 [lecture_02_00]: /images/Lecture_02_00.jpg
 [lecture_02_01]: /images/Lecture_02_01.jpg
@@ -218,3 +238,4 @@ Example: `python predict.py --image_path data/pizza_steak_sushi/test/sushi/17578
 [exercise_04_02]: /images/Excercise_04_02.jpg
 [exercise_04_03]: /images/Excercise_04_03.jpg
 [exercise_04_04]: /images/Excercise_04_04.jpg
+[lecture_06_00]: /images/Lecture_06_00.jpg
