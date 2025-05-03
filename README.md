@@ -216,7 +216,7 @@ This notebook is all about transfer learning using [EfficientNet_B0](https://pyt
 
 We then make predictions on 3 test images, which at the time of this writing happen to be all correct. Lastly, a correct prediction was made on a custom image which I downloaded from the [Pytorch for Deep Learning GitHub repo](https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/04-pizza-dad.jpeg).
 
-We can see that, by far, transfer learning has been the most accurate and efficient method we have used so far.
+We can see that transfer learning has been the most accurate and efficient method we have used so far.
 
 ### Exercise Notebook
 
