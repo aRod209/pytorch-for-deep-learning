@@ -216,9 +216,35 @@ This notebook is all about transfer learning using [EfficientNet_B0](https://pyt
 
 We then make predictions on 3 test images, which at the time of this writing happen to be all correct. Lastly, a correct prediction was made on a custom image which I downloaded from the [Pytorch for Deep Learning GitHub repo](https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/04-pizza-dad.jpeg).
 
-We can see that transfer learning has been the most accurate and efficient method we have used so far.
+We can see that transfer learning has been the most accurate and efficient method I have used so far.
 
 ### Exercise Notebook
+
+The exercise first starts out replicating what we did in the lecture material where I used transfer learning with [EfficientNet_B0](https://pytorch.org/vision/main/models/generated/torchvision.models.efficientnet_b0.html#torchvision.models.EfficientNet_B0_Weights) to make predictions on images of pizza, steak, and sushi. I created a confusion matrix and see that the model did quite well although not perfect.
+
+![EfficientNet B0 Confusion Matrix][exercise_06_00]
+
+Using Pandas and Matplotlib, I then found and plotted the 5 "most wrongly predicted" images of the dataset. There could be various reasons these images are labeled incorrectly. It could be the color of the image, the general shape in the image, or maybe there is bad data such as the image of the hamburger having a truth label of pizza.
+
+![5 Most Wrong Predictions][exercise_06_01]
+
+I then used EfficientNet_B0 to predict on my own images, steak and a bowl full of cereal. EfficientNet_B0 succuesfully predicted the steak but labled the cereal as pizza (perhaps because of the round shape of the cereal bowl).
+
+![Steak Prediction][exercise_06_02]
+
+![Predicting Cereal As Pizza][exercise_06_03]
+
+The next experiment was to train EfficientNet_B0 for 10 epochs versus the 5 we used before. The performance of both the train and test accuracy decreased. The training accuracy decreased from 0.9102 to 0.8047 and the test accuracy decreased from 0.8968 to 0.8864.
+
+![Training EfficientNet_B0 For 10 Epochs][exercise_06_04]
+
+I then trained EffcientNet_B0 with only 20% of the data. Using only 5 epochs, this surpisingly took the longest to train (332.338 seconds) but it had the better training accuracy and testing accuracy compared to the model using 10 epochs, being 0.8583 and 0.9284 respectively.
+
+![Training EfficientNet_B0 For 5 Epochs Using 20 Percent Of Data][exercise_06_05]
+
+The last exercise I did was using a different model for transfer learning. I opted to use [EffecientNet_B2](https://docs.pytorch.org/vision/main/models/generated/torchvision.models.efficientnet_b2.html). I trained the model for 5 epochs with all the pizza, steak, and sushi data that I used before. Surprisingly, it performed the worse out of all the models with a training accuracy of 0.7852 and a test accuracy of 0.8561.
+
+![Training EfficientNet_B2 For 5 Epochs][exercise_06_06]
 
 </details>
 
@@ -239,3 +265,10 @@ We can see that transfer learning has been the most accurate and efficient metho
 [exercise_04_03]: /images/Excercise_04_03.jpg
 [exercise_04_04]: /images/Excercise_04_04.jpg
 [lecture_06_00]: /images/Lecture_06_00.jpg
+[exercise_06_00]: /images/Exercise_06_00.jpg
+[exercise_06_01]: /images/Exercise_06_01.jpg
+[exercise_06_02]: /images/Exercise_06_02.jpg
+[exercise_06_03]: /images/Exercise_06_03.jpg
+[exercise_06_04]: /images/Exercise_06_04.jpg
+[exercise_06_05]: /images/Exercise_06_05.jpg
+[exercise_06_06]: /images/Exercise_06_06.jpg
